@@ -1,6 +1,6 @@
-# Finance Dash Backend
+# Finance Dash Backend Assignment for Zorvyn Fintech
 
-REST API backend for a finance dashboard with role-based access control, transaction management, dashboard analytics, pagination, search, rate limiting, and API documentation.
+Backend for a finance dashboard with user management, role-based access control, transaction management, dashboard analytics, pagination, search, rate limiting, and API documentation.
 
 ## Tech Stack
 
@@ -14,7 +14,7 @@ REST API backend for a finance dashboard with role-based access control, transac
 
 ## Features
 
-- Public registration and login with JWT authentication
+- User registration and login with JWT authentication
 - Role-based permissions for `VIEWER`, `ANALYST`, and `ADMIN`
 - Admin user management, including role assignment and active/inactive status
 - Transaction CRUD with soft delete
@@ -31,7 +31,7 @@ REST API backend for a finance dashboard with role-based access control, transac
 |---|---|
 | `VIEWER` | View transactions |
 | `ANALYST` | Everything VIEWER can do, plus create/update transactions and access dashboard analytics |
-| `ADMIN` | Everything ANALYST can do, plus delete transactions and manage users |
+| `ADMIN` | Everything ANALYST can do, plus delete transactions and creat/manage users |
 
 ## Setup
 
@@ -53,7 +53,7 @@ cp .env.example .env
 |---|---|
 | `DATABASE_URL` | PostgreSQL connection string |
 | `JWT_SECRET` | Secret used for JWT signing |
-| `PORT` | API port, defaults to `3000` |
+| `PORT` | API port, defaults to `8080` |
 | `TEST_DATABASE_URL` | Optional dedicated database URL for tests; if omitted, tests use `DATABASE_URL` with schema `finance_dash_test` |
 
 4. Start the development server
@@ -62,7 +62,7 @@ cp .env.example .env
 npm run dev
 ```
 
-The API runs on `http://localhost:3000`.
+The API runs on `http://localhost:8080`.
 
 ## API Docs
 
