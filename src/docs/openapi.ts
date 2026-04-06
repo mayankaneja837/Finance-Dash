@@ -276,7 +276,7 @@ export const openApiDocument = {
     description: 'REST API for finance records, dashboard analytics, user management, and role-based access control.'
   },
   servers: [
-    { url: 'https://finance-dash-production-42b5.up.railway.app:8080' }
+    { url: 'https://finance-dash-production-42b5.up.railway.app' }
   ],
   tags: [
     { name: 'Auth' },
