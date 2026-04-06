@@ -17,6 +17,7 @@ Backend for a finance dashboard with user management, role-based access control,
 - User registration and login with JWT authentication
 - Role-based permissions for `VIEWER`, `ANALYST`, and `ADMIN`
 - Admin user management, including role assignment and active/inactive status
+- Seed script for creating the first `ADMIN` user, after which most admin tasks can be handled easily through the API
 - Transaction CRUD with soft delete
 - Transaction filters by type, category, date range, and search
 - Offset pagination for transaction listing
@@ -63,6 +64,16 @@ npm run dev
 ```
 
 The API runs on `http://localhost:8080`.
+
+## Admin Bootstrap
+
+The project includes a seed script to create the first admin user:
+
+```bash
+npm run seed
+```
+
+Once this initial `ADMIN` account is created, most admin tasks can then be performed easily through the API, such as creating users, assigning roles, updating account status, and deleting users.
 
 ## API Docs
 
